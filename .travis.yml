@@ -11,7 +11,7 @@ before_install:
   - sudo chown root:$USER /etc/fuse.conf
 
 install:
-  - echo passing to ./all.bash
+  - go get -t -race ./...
 
 script:
   - ./all.bash

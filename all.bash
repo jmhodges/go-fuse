@@ -19,7 +19,6 @@ do
         for GOOS in darwin linux ; do
           export GOOS
           go test -c -i github.com/hanwen/go-fuse/$d
-          go test -c -i -race github.com/hanwen/go-fuse/$d
         done
 
         echo "go test github.com/hanwen/go-fuse/$d"
